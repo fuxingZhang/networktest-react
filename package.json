@@ -1,0 +1,21 @@
+{
+  "name": "networktest",
+  "version": "1.0.0",
+  "description": "network speed test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zfx",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^5.2.0",
+    "aws-sdk": "^2.238.1",
+    "busboy": "^0.2.14",
+    "koa": "^2.5.1",
+    "koa-body": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "koa2-cors": "^2.0.5"
+  }
+}
