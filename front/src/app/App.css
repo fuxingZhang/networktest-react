@@ -1,0 +1,12 @@
+header nav a{
+  display: inline-block;
+  width: 100px;;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  height: 59px;
+  box-sizing: border-box;
+}
+header nav a:hover{
+  background-color: rgb(34, 50, 67);
+}
