@@ -5,7 +5,7 @@ Network test based on react, koa2
 ```  
 networktest-angular
 ├── ali-oss              // ali oss目录
-├── front                // 前端vue目录
+├── front                // 前端react目录
 ├── node_modules         
 ├── public               // 打包后的静态文件
 ├── routes               // 后端路由
