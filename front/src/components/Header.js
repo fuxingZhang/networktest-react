@@ -20,7 +20,7 @@ export default () => (
 	<header style={headerStyle}>
 	  <NavLink
     	to="/"
-	 	>
+		>
 		  <h1 style={{
 	  	  width: '300px',
 			  fontSize: '16px',
