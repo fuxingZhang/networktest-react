@@ -124,10 +124,10 @@ class latency extends React.Component {
     return (
 			<section>
 				<div className="card">
-				<div id="myChart" style={{
-					width: '100%',
-					height:'400px'
-				}}></div>
+					<div id="myChart" style={{
+						width: '100%',
+						height:'400px'
+					}}></div>
 					<div className="table">
 						<div>
 							<div>当前值</div>
@@ -148,7 +148,6 @@ class latency extends React.Component {
 	}
 	
 	change = () =>{
-		console.log(this.timer)
 		if (this.timer) {
 			clearTimeout(this.timer);
 			this.timer = "";
