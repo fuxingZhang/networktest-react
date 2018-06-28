@@ -27,3 +27,12 @@ https://github.com/fuxingZhang/networktest-angular
 
 #### network test base on vue  
 https://github.com/fuxingZhang/networktest  
+
+## 相关资源  
+### react  
+website: https://reactjs.org/  
+github: https://github.com/facebook/react  
+
+### react-router  
+website: https://reacttraining.com/react-router/  
+github: https://github.com/ReactTraining/react-router   
