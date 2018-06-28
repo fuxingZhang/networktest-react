@@ -3,7 +3,7 @@ import './upload.css';
 import echarts from 'echarts';
 import axios from 'axios'
 
-class upload extends React.Component {
+class Upload extends React.Component {
   constructor(props) {
 		super(props);
 		this.run = this.run.bind(this)
@@ -290,7 +290,7 @@ class upload extends React.Component {
     this.start = start
     this.source = this.CancelToken.source();
     let postData = []
-    let n = parseInt(this.state.value)
+    let n = parseInt(this.state.value, 10)
     for(let i=0;i < n; i++){
       postData.push(this.uploadData)
     }
@@ -313,7 +313,6 @@ class upload extends React.Component {
     let res = await this.request.post("api/upload", data,{
       cancelToken: this.source.token
     });
-    const end = Date.now();
     console.log(res);
     this.length = 0;
     this.source = null;
@@ -385,4 +384,4 @@ class upload extends React.Component {
   }
 }
 
-export default upload
+export default Upload

@@ -3,7 +3,7 @@ import './download.css';
 import echarts from 'echarts';
 import axios from 'axios'
 
-class download extends React.Component {
+class Download extends React.Component {
   constructor(props) {
 		super(props);
 		this.run = this.run.bind(this)
@@ -149,14 +149,13 @@ class download extends React.Component {
     let res = await this.request.get("api/download",{
       cancelToken: this.source.token
     });
-    const end = Date.now();
     console.log(res);
   	this.setState({
 			button: "开始"
 		})
     this.source = null;
     this.running = false;
-    if (res.status != 200) {
+    if (res.status !== 200) {
       alert('网络异常')
     }
 	}
@@ -206,4 +205,4 @@ class download extends React.Component {
   }
 }
 
-export default download
+export default Download

@@ -3,7 +3,7 @@ import './latency.css';
 import echarts from 'echarts';
 import axios from '../../axios'
 
-class latency extends React.Component {
+class Latency extends React.Component {
   constructor(props) {
 		super(props);
 		this.run = this.run.bind(this)
@@ -195,7 +195,7 @@ class latency extends React.Component {
 		const start = Date.now();
 		let res = await axios.get("api/latency");
 		const end = Date.now();
-		if (res.status != 200) {
+		if (res.status !== 200) {
 			alert('网络异常')
 			this.setState({
 				button: "开始"
@@ -228,4 +228,4 @@ class latency extends React.Component {
 	}
 }
 
-export default latency
+export default Latency
